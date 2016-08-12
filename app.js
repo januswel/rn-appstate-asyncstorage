@@ -32,7 +32,6 @@ export default class App extends React.Component {
             appState: AppState.currentState,
             memoryWarnings: 0,
         }
-        this.data()
     }
 
     async data() {
@@ -49,6 +48,8 @@ export default class App extends React.Component {
         AppState.addEventListener('memoryWarning', this.handleMemoryWarning.bind(this))
 
         await this.read()
+        await this.data()
+        await this.write()
     }
 
     componentWillUnmount() {
