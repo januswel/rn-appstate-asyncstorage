@@ -42,8 +42,8 @@ Android
 
 with pressing Home button
 
-![android to background01](https://github.com/januswel/rn-appstate-sample/raw/images/images/android/to-backdround01.gif)
+![android to background01](https://raw.githubusercontent.com/januswel/rn-appstate-sample/images/images/android/to-background01.gif)
 
 with pressing OverView button
 
-![android to background02](https://github.com/januswel/rn-appstate-sample/raw/images/images/android/to-backdround02.gif)
+![android to background02](https://raw.githubusercontent.com/januswel/rn-appstate-sample/images/images/android/to-background02.gif)
