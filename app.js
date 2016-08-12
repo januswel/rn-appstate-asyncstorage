@@ -113,10 +113,8 @@ export default class App extends React.Component {
             <Text style={styles.text}>
               memory warnings: {this.state.memoryWarnings}
             </Text>
-            <Text
-              numberOfLines={10}
-              style={styles.text}>
-              {this.state.previousState}
+            <Text style={styles.text}>
+              written {this.state.previousState} bytes on inactive
             </Text>
           </View>
         )
