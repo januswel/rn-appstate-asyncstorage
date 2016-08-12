@@ -6,6 +6,7 @@ import {
     Text,
     View
 } from 'react-native'
+import { WRITE_BACK_EVENT } from './const'
 
 const styles = StyleSheet.create({
     container: {
@@ -64,7 +65,7 @@ export default class App extends React.Component {
         if (currentAppState === 'active') {
             await this.read()
         }
-        else if (currentAppState === 'inactive') {
+        else if (currentAppState === WRITE_BACK_EVENT) {
             await this.write()
         }
     }
@@ -114,7 +115,7 @@ export default class App extends React.Component {
               memory warnings: {this.state.memoryWarnings}
             </Text>
             <Text style={styles.text}>
-              written {this.state.previousState} bytes on inactive
+              written {this.state.previousState} bytes on previous
             </Text>
           </View>
         )
